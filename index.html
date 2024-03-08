@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <title>Centrar en el Medio con Tailwind</title>
+</head>
+
+<body>
+
+    <section class="md:flex md:items-center md:justify-between">
+        <div class="md:w-1/2 md:mt-0 mt-40">
+            <div class="p-4 mt-10">
+                <h1 class="text-center text-2xl font-bold mb-4">
+                    PARA LA MEJOR MUJER DEL MUNDO ❤
+                </h1>
+                <p class="flex text-center items-center">
+                    Antes que nada le doy las gracias por compartir un pedacito de su tiempo conmigo,
+                    la amo mucho y deseo que tenga UN FELIZ DÍA DE LA MUJER 🎉
+                </p>
+            </div>
+            <div class="h-64">
+                <canvas id="rosaCanvas" width="400" height="400"></canvas>
+            </div>
+            <div class="w-full flex justify-end pr-3"> <!-- Ancho: 16rem, Alto: 8rem -->
+                <button
+                    class="bg-gray-500 hover:bg-gray-700 text-white font-bold my-4 py-2 px-4 rounded transition duration-300 ease-in-out">
+                    <a href="web.html">SIGUIENTE</a>
+                </button>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

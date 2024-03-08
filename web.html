@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones con Premios</title>
+    <!-- Enlace a Tailwind CSS (ajusta la ruta según tu configuración) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="md:flex md:items-center md:justify-between mt-40">
+        <div class="p-8 rounded">
+            <!-- Contenido del centro -->
+            <h1 class="text-center text-2xl font-bold">ESCOGE UNO Y TOMA UNA CAPTURA</h1>
+            <p class="text-center">Sin hacer trampas eh! 🤫 Te estoy vigilando 🕵️‍♂️ Ahora si, escoge uno 🙌</p>
+            <br>
+            <div class="grid grid-cols-3 gap-4">
+                <button id="boton1"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+                    PREMIO
+                </button>
+                <button id="boton2"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+                    PREMIO
+                </button>
+                <button id="boton3"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+                    PREMIO
+                </button>
+                <button id="boton4"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+                    PREMIO
+                </button>
+                <button id="boton5"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+                    PREMIO
+                </button>
+                <button id="boton6"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+                    PREMIO
+                </button>
+                <button id="boton7"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+                    PREMIO
+                </button>
+                <button id="boton8"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+                    PREMIO
+                </button>
+                <button id="boton9"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+                    PREMIO
+                </button>
+                <button id="boton10"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+                    PREMIO
+                </button>
+                <button id="boton11"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+                    PREMIO
+                </button>
+                <button id="boton12"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+                    PREMIO
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full flex justify-start pl-3 mt-10"> <!-- Ancho: 16rem, Alto: 8rem -->
+        <button
+            class="bg-gray-500 hover:bg-gray-700 text-white font-bold my-4 py-2 px-4 rounded transition duration-300 ease-in-out">
+            <a href="/">ATRAS</a>
+        </button>
+    </div>
+
+    <script>
+        var veces = 0;
+        let premio;
+        function mostrarPremio(botonId) {
+            if (veces > 0) {
+                alert(`¡Estas haciendo trampa 😡!, Tu premio era: ${premio}`);
+            } else {
+                {
+                    switch (botonId) {
+                        case 'boton1':
+                            premio = 'IR A COMER 🍽'; veces++;
+                            break;
+                        case 'boton2':
+                            premio = 'IR A DONDE TÚ QUIERAS 🥰'; veces++;
+                            break;
+                        case 'boton3':
+                            premio = 'DORMIR JUNTOS 🛏  '; veces++;
+                            break;
+                        case 'boton4':
+                            premio = 'IR A JUGAR 🏐'; veces++;
+                            break;
+                        case 'boton5':
+                            premio = 'PREMIO SORPRESA 😏'; veces++;
+                            break;
+                        case 'boton6':
+                            premio = 'IR A LA CREMOSITA 😋'; veces++;
+                            break;
+                        case 'boton7':
+                            premio = 'IR AL CINE 🎥'; veces++;
+                            break;
+                        case 'boton8':
+                            premio = 'IR AL SAUNA 🧖‍♂️'; veces++;
+                            break;
+                        case 'boton9':
+                            premio = 'IR A BAILAR 🕺'; veces++;
+                            break;
+                        case 'boton10':
+                            premio = 'IR DE VIAJE ✈'; veces++;
+                            break;
+                        case 'boton11':
+                            premio = 'IR A COMER HELADO 🍨'; veces++;
+                            break;
+                        case 'boton12':
+                            premio = 'IR A PASEAR 🚶‍♂️'; veces++;
+                            break;
+                        default:
+                            premio = 'Sin premio'; veces++;
+                    }
+
+                    // Mostrar el premio en una alerta
+                    alert(`¡Felicidades! 🎉 Te ganaste: ${premio} \nAhora toma una captura y envíamelo para hacer valido tu premio 🤭`);
+                }
+            }
+        }
+
+        // Agregar un evento de clic a cada botón
+        document.getElementById('boton1').addEventListener('click', () => mostrarPremio('boton1'));
+        document.getElementById('boton2').addEventListener('click', () => mostrarPremio('boton2'));
+        document.getElementById('boton3').addEventListener('click', () => mostrarPremio('boton3'));
+        document.getElementById('boton4').addEventListener('click', () => mostrarPremio('boton4'));
+        document.getElementById('boton5').addEventListener('click', () => mostrarPremio('boton5'));
+        document.getElementById('boton6').addEventListener('click', () => mostrarPremio('boton6'));
+        document.getElementById('boton7').addEventListener('click', () => mostrarPremio('boton7'));
+        document.getElementById('boton8').addEventListener('click', () => mostrarPremio('boton8'));
+        document.getElementById('boton9').addEventListener('click', () => mostrarPremio('boton9'));
+        document.getElementById('boton10').addEventListener('click', () => mostrarPremio('boton10'));
+        document.getElementById('boton11').addEventListener('click', () => mostrarPremio('boton11'));
+        document.getElementById('boton12').addEventListener('click', () => mostrarPremio('boton12'));
+    </script>
+
+</body>
+
+</html>
